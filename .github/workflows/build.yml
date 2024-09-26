@@ -1,13 +1,13 @@
-name: Build Spring Boot Application
+name: Build NSComponent API Application
 
 # Trigger the workflow on push or pull request to the main branch
 on:
   push:
     branches:
-      - main
+      - '**'       # main or any specific branch .. for all branch it is '**'
   pull_request:
     branches:
-      - main
+      - main  # Trigger only on pull requests targeting the main branch
 
 jobs:
   build:
